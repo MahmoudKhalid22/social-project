@@ -1,0 +1,62 @@
+.rightbar {
+  flex: 3.5;
+  position: sticky;
+  top: 50px;
+}
+.rightbarWrapper {
+  padding: 1.25rem 1.25rem 0 0;
+}
+.occasionDay {
+  display: flex;
+  align-items: center;
+}
+.occasionDayImg {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 10px;
+}
+.occasionText {
+  font-weight: 300;
+  font-size: 15px;
+}
+.rightbarAd {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1.875rem 0;
+}
+.rightbarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.rightbarTitle {
+  margin-bottom: 1.25rem;
+}
+.rightbarFriend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.rightbarProfileImgContainer {
+  margin-right: 10px;
+  position: relative;
+}
+.rightbarProfileImg {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.rightbarOnline {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: limegreen;
+  position: absolute;
+  top: -4;
+  right: 0;
+  border: 2px solid white;
+}
+.rightbarUsername {
+  font-weight: 500;
+}

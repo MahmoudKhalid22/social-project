@@ -1,0 +1,136 @@
+.topbarcontainer {
+  height: 50px;
+  width: 100%;
+  background-color: #1877f2;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+/* TopbarLeft */
+.topbarLeft {
+  flex: 3;
+}
+.logo {
+  font-size: 24px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+/* TopbarCenter */
+.topbarCenter {
+  flex: 5;
+}
+.searchbar {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+.searchIcon {
+  font-size: 20px !important;
+  margin-left: 10px;
+}
+.searchInput {
+  width: 85%;
+  margin-left: 10px;
+  border: none;
+}
+.searchInput:focus {
+  outline: none;
+}
+/* TopbarRight */
+.topbarRight {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+.topbarLinks {
+  margin-right: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.topbarIcons {
+  display: flex;
+}
+.topbarIconItem {
+  margin-right: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.topbarIconBadge {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  text-align: center;
+  font-size: 12px;
+  padding: 0.25px;
+  font-weight: 700;
+}
+.topbarImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* RESPONSIVE */
+/* BELOW 944 px (Tablets) */
+@media (max-width: 59em) {
+  .searchbar {
+    width: 85%;
+  }
+  .searchInput {
+    width: 72%;
+  }
+}
+
+/* BELOW 704 px (Smaller Tablets */
+@media (max-width: 44em) {
+  .logo {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  .searchInput {
+    width: 50%;
+  }
+}
+/* BELOW 544 px (Mobiles) */
+
+@media (max-width: 38em) {
+  .topbarRight {
+    position: absolute;
+    top: 50px;
+    background-color: #1877f2;
+    width: 100%;
+  }
+  .searchInput {
+    display: none;
+  }
+  .searchbar {
+    width: 39px;
+    position: absolute;
+    right: 7px;
+    top: 12px;
+  }
+  .topbarLeft {
+    position: relative;
+    top: -3px;
+  }
+  .topbarImg {
+    position: relative;
+    top: -4px;
+    cursor: pointer;
+  }
+}
