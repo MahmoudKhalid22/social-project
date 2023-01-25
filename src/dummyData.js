@@ -42,7 +42,7 @@ export const Users = [
   {
     id: 9,
     profilePicture: "/assets/shabdo.jpg",
-    username: "Abdo Almishawy",
+    username: "Abdo Alminshawy",
   },
   {
     id: 10,
